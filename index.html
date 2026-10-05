@@ -583,8 +583,7 @@
   @media(max-width:900px){
     .header-board{grid-template-columns:1fr 1fr;margin:16px 0 36px;}
     .header-board .kpi-slab:first-child,.header-board .kpi-slab:last-child{grid-column:1 / -1;}
-    .header-board .ring-slab{grid-column:1 / -1;}
-  }
+      }
 
   .views-panel{background:var(--card);border:1px solid var(--hairline);border-radius:var(--radius);padding:16px 16px 4px;position:relative;overflow:hidden;width:100%;}
   .views-panel:before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--gold-dim),var(--gold-hi),var(--gold-dim));}
@@ -609,7 +608,7 @@
     .header-board .follower-slab .value,.header-board .best-slab .value{font-size:30px;line-height:.95;white-space:normal;}
     .header-board .kpi-slab .sub,.header-board .follower-slab .sub,.header-board .best-slab .sub{font-size:11px;line-height:1.3;white-space:normal;overflow:visible;}
     .header-board .kpi-slab,.header-board .kpi-slab:first-child,.header-board .kpi-slab:last-child{grid-column:1 / -1;}
-    .header-board .ring-slab{grid-column:1 / -1;display:flex;align-items:center;gap:12px;}
+    .header-board .ring-slab{grid-column:auto;display:flex;align-items:center;gap:8px;}
   }
 </style>
 </head>
