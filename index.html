@@ -595,7 +595,10 @@
   .views-chart{width:100%;height:auto;display:block;margin-top:4px;}
   @media(max-width:640px){
     .views-num{font-size:32px;}
-    .views-panel{padding:14px 10px 2px;}
+    .views-panel{padding:14px 10px 8px;width:100%;}
+    .views-top{align-items:flex-start;}
+    .views-chart{height:170px;}
+    .views-chart text{font-size:11px;}
   }
 </style>
 </head>
@@ -686,7 +689,7 @@
         <polyline fill="url(#viewsFill)" stroke="none" points="70,156 70,66 620,28 620,156"/>
         <polyline fill="none" stroke="#f6d364" stroke-width="3" points="70,66 620,28"/>
         <text x="70" y="186" fill="#b5b5b5" font-size="14">August · 1,197,756</text>
-        <text x="430" y="186" fill="#b5b5b5" font-size="14">September · 1,499,830</text>
+        <text x="360" y="186" fill="#b5b5b5" font-size="14">September · 1,499,830</text>
         <defs>
           <linearGradient id="viewsFill" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#d9a83b" stop-opacity="0.28"/>
