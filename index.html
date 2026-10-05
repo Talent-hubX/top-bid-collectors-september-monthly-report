@@ -558,6 +558,28 @@
     .kpi-row{grid-template-columns:1fr;margin:16px 0 10px;}
     .kpi-slab .value{font-size:44px;}
   }
+
+  .dash-preview{margin:0 0 22px;padding:18px 16px 14px;border:1px solid rgba(226,179,64,.45);border-radius:22px;background:#0c0c0c;}
+  .dash-head{display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .dash-head h3{margin:0;font-family:'Inter',sans-serif;font-size:22px;font-weight:600;}
+  .dash-head span,.dash-pills span{border:1px solid #3a3a3a;border-radius:999px;padding:6px 12px;color:#bdbdbd;font-size:12px;}
+  .dash-pills{display:flex;gap:10px;align-items:center;margin:14px 0;flex-wrap:wrap;}
+  .dash-pills .on{background:#2a2a2a;color:#fff;}
+  .dash-hero,.dash-split div{border:1px solid #3a3a3a;border-radius:16px;padding:14px 16px;background:#111;}
+  .dash-big{font-family:'Inter',sans-serif;font-weight:700;font-size:54px;color:#e2b340;line-height:1;margin-top:8px;}
+  .dash-split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;}
+  .dash-mid{font-size:32px;font-weight:700;margin-top:8px;}
+  .dash-cum{display:flex;justify-content:space-between;align-items:flex-end;margin:18px 4px 0;}
+  .dash-num{font-size:28px;font-weight:700;}
+  .dash-side{color:#9a9a9a;text-align:right;font-size:13px;}
+  .dash-chart{width:100%;height:auto;display:block;margin-top:6px;}
+  .dash-note{margin:8px 4px 0;color:#8a8a8a;font-size:12px;}
+  @media(max-width:640px){
+    .dash-big{font-size:42px;}
+    .dash-mid{font-size:26px;}
+    .dash-split{grid-template-columns:1fr 1fr;}
+    .dash-num{font-size:22px;}
+  }
 </style>
 </head>
 
@@ -583,6 +605,47 @@
       <div class="sub">39K socials + 120.6K Whatnot · topbidcollectors only</div>
     </div>
   </div>
+
+  <section class="dash-preview">
+    <div class="dash-head">
+      <h3>Analytics</h3>
+      <span>Dashboard preview</span>
+    </div>
+    <div class="dash-pills">
+      <span class="on">All accounts</span>
+      <span>Facebook · Instagram · YouTube · TikTok</span>
+    </div>
+    <div class="dash-hero">
+      <div class="label">Total views</div>
+      <div class="dash-big">1.50M</div>
+    </div>
+    <div class="dash-split">
+      <div>
+        <div class="label">Total engagement</div>
+        <div class="dash-mid">25,031</div>
+      </div>
+      <div>
+        <div class="label">Videos published</div>
+        <div class="dash-mid">291/252</div>
+      </div>
+    </div>
+    <div class="dash-cum">
+      <div>
+        <div class="dash-num">1,499,830</div>
+        <div class="label">total views</div>
+      </div>
+      <div class="dash-side">September<br>vs August</div>
+    </div>
+    <svg class="dash-chart" viewBox="0 0 640 180" role="img" aria-label="August to September views">
+      <line x1="24" y1="20" x2="616" y2="20" stroke="#2a2a2a"/>
+      <line x1="24" y1="70" x2="616" y2="70" stroke="#2a2a2a"/>
+      <line x1="24" y1="120" x2="616" y2="120" stroke="#2a2a2a"/>
+      <polyline fill="none" stroke="#e2b340" stroke-width="3" points="40,92 600,38"/>
+      <text x="40" y="162" fill="#8a8a8a" font-size="13">August · 1,197,756</text>
+      <text x="430" y="162" fill="#8a8a8a" font-size="13">September · 1,499,830</text>
+    </svg>
+    <p class="dash-note">Layout test. Figures are the September report totals, not a daily curve.</p>
+  </section>
   <div class="stats">
     <div class="slab follower-slab">
       <div class="label">Total Followers</div>
