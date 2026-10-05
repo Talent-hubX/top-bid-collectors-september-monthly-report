@@ -585,6 +585,17 @@
     .header-board .kpi-slab:first-child,.header-board .kpi-slab:last-child{grid-column:auto;}
     .header-board .ring-slab{grid-column:1 / -1;}
   }
+
+  .views-panel{background:#0c0c0c;border:1px solid #2a2a2a;border-radius:18px;padding:22px 18px 8px;}
+  .views-top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;}
+  .views-num{font-family:'Inter',sans-serif;font-weight:700;font-size:42px;letter-spacing:-.03em;line-height:1;}
+  .views-label{color:#9a9a9a;font-size:16px;margin-top:6px;}
+  .views-side{color:#9a9a9a;text-align:right;font-size:16px;line-height:1.25;}
+  .views-chart{width:100%;height:auto;display:block;margin-top:12px;}
+  @media(max-width:640px){
+    .views-num{font-size:30px;}
+    .views-panel{padding:16px 10px 4px;}
+  }
 </style>
 </head>
 
@@ -651,6 +662,43 @@
   <div class="section">
     <div class="section-head">
       <span class="section-num">01</span>
+      <h2>Total Views</h2>
+    </div>
+    <p class="section-desc">Combined views for Top Bid Collectors, Top Bid Sports, and Top Bid Card Shop/Breaks.</p>
+    <div class="views-panel">
+      <div class="views-top">
+        <div>
+          <div class="views-num">1,499,830</div>
+          <div class="views-label">total views</div>
+        </div>
+        <div class="views-side">Cumulative<br>views</div>
+      </div>
+      <svg class="views-chart" viewBox="0 0 680 210" role="img" aria-label="August to September total views">
+        <line x1="36" y1="24" x2="650" y2="24" stroke="#2a2a2a"/>
+        <line x1="36" y1="68" x2="650" y2="68" stroke="#2a2a2a"/>
+        <line x1="36" y1="112" x2="650" y2="112" stroke="#2a2a2a"/>
+        <line x1="36" y1="156" x2="650" y2="156" stroke="#2a2a2a"/>
+        <text x="8" y="28" fill="#8d8d8d" font-size="12">1.6M</text>
+        <text x="8" y="72" fill="#8d8d8d" font-size="12">1.2M</text>
+        <text x="8" y="116" fill="#8d8d8d" font-size="12">0.8M</text>
+        <text x="8" y="160" fill="#8d8d8d" font-size="12">0.4M</text>
+        <polyline fill="url(#viewsFill)" stroke="none" points="70,156 70,66 620,28 620,156"/>
+        <polyline fill="none" stroke="#e2b340" stroke-width="3" points="70,66 620,28"/>
+        <text x="70" y="186" fill="#b5b5b5" font-size="14">August · 1,197,756</text>
+        <text x="430" y="186" fill="#b5b5b5" font-size="14">September · 1,499,830</text>
+        <defs>
+          <linearGradient id="viewsFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e2b340" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#e2b340" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="section-num">02</span>
       <h2>Engagement by Format</h2>
     </div>
     <p class="section-desc">All 15 active labels tracked in September, ranked by average engagement per post. Bar length is relative to the top performer.</p>
@@ -762,7 +810,7 @@
 
   <div class="section">
     <div class="section-head">
-      <span class="section-num">02</span>
+      <span class="section-num">03</span>
       <h2>Format Ranking</h2>
     </div>
     <p class="section-desc">The same 15 labels, graded by average views per post — reach, not just engagement. Fire Overlay leads. FIFA Card AI, Countdown Reveal, and Fast Reveal close September with the lowest reach.</p>
@@ -886,7 +934,7 @@
 
   <div class="section">
     <div class="section-head">
-      <span class="section-num">03</span>
+      <span class="section-num">04</span>
       <h2>Active Creative Styles — Testing in October</h2>
     </div>
     <p class="section-desc">Five formats tested this month — GTA 6 / Version 1, GTA 6 / Version 2, Money, Viral Sound Effects, and Nuke Animation.</p>
@@ -960,7 +1008,7 @@
 
   <div class="section">
     <div class="section-head">
-      <span class="section-num">04</span>
+      <span class="section-num">05</span>
       <h2>Next Steps</h2>
     </div>
     <p class="section-desc">Where the accounts stand as September closes, and what carries into October.</p>
@@ -991,7 +1039,7 @@
 
   <div class="section">
     <div class="section-head">
-      <span class="section-num">05</span>
+      <span class="section-num">06</span>
       <h2>MoM Social Growth — August vs. September</h2>
     </div>
     <p class="section-desc">Followers and published posts are company-wide across all accounts. Views and engagement are split by Top Bid Collectors, Top Bid Sports, and Top Bid Card Shop / Breaks.</p>
@@ -1334,7 +1382,7 @@
 
   <div class="section">
     <div class="section-head">
-      <span class="section-num">06</span>
+      <span class="section-num">07</span>
       <h2>Next Month's Creative Strategy — October</h2>
     </div>
     <p class="section-desc">September's read: production exceeded target (291 videos vs. the 252/mo goal). Fire Overlay led both rankings (508 avg. eng., 8,436 avg. views on 12 posts). Card Shop/Breaks carried the month (views 129,426 to 309,765, engagement 2,308 to 5,162).</p>
