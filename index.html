@@ -586,15 +586,16 @@
     .header-board .ring-slab{grid-column:1 / -1;}
   }
 
-  .views-panel{background:#0c0c0c;border:1px solid #2a2a2a;border-radius:18px;padding:22px 18px 8px;}
-  .views-top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;}
-  .views-num{font-family:'Inter',sans-serif;font-weight:700;font-size:42px;letter-spacing:-.03em;line-height:1;}
-  .views-label{color:#9a9a9a;font-size:16px;margin-top:6px;}
-  .views-side{color:#9a9a9a;text-align:right;font-size:16px;line-height:1.25;}
-  .views-chart{width:100%;height:auto;display:block;margin-top:12px;}
+  .views-panel{background:var(--card);border:1px solid var(--hairline);border-radius:var(--radius);padding:16px 16px 4px;position:relative;overflow:hidden;max-width:760px;}
+  .views-panel:before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--gold-dim),var(--gold-hi),var(--gold-dim));}
+  .views-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;}
+  .views-num{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:.02em;line-height:1;color:var(--gold-hi);}
+  .views-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory-dim);margin-top:6px;}
+  .views-side{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ivory-dim);text-align:right;line-height:1.35;}
+  .views-chart{width:100%;height:auto;display:block;margin-top:4px;}
   @media(max-width:640px){
-    .views-num{font-size:30px;}
-    .views-panel{padding:16px 10px 4px;}
+    .views-num{font-size:32px;}
+    .views-panel{padding:14px 10px 2px;max-width:none;}
   }
 </style>
 </head>
@@ -683,13 +684,13 @@
         <text x="8" y="116" fill="#8d8d8d" font-size="12">0.8M</text>
         <text x="8" y="160" fill="#8d8d8d" font-size="12">0.4M</text>
         <polyline fill="url(#viewsFill)" stroke="none" points="70,156 70,66 620,28 620,156"/>
-        <polyline fill="none" stroke="#e2b340" stroke-width="3" points="70,66 620,28"/>
+        <polyline fill="none" stroke="#f6d364" stroke-width="3" points="70,66 620,28"/>
         <text x="70" y="186" fill="#b5b5b5" font-size="14">August · 1,197,756</text>
         <text x="430" y="186" fill="#b5b5b5" font-size="14">September · 1,499,830</text>
         <defs>
           <linearGradient id="viewsFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#e2b340" stop-opacity="0.28"/>
-            <stop offset="100%" stop-color="#e2b340" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#d9a83b" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#d9a83b" stop-opacity="0"/>
           </linearGradient>
         </defs>
       </svg>
