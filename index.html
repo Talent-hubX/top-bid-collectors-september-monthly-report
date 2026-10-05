@@ -610,6 +610,11 @@
     .header-board .kpi-slab,.header-board .kpi-slab:first-child,.header-board .kpi-slab:last-child,.header-board .ring-slab{grid-column:1 / -1;}
     .header-board .ring-slab{grid-column:1 / -1;display:flex;align-items:center;gap:12px;}
   }
+
+  @media(max-width:900px){
+    .header-board .best-slab{display:none;}
+    .header-board .ring-slab{grid-column:1 / -1;width:100%;}
+  }
 </style>
 </head>
 
