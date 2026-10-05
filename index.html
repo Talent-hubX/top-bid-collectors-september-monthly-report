@@ -549,6 +549,14 @@
   @media(max-width:900px){
     .swipe-hint{display:block;text-align:right;margin:-12px 2px 18px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--gold-hi);}
   }
+  .kpi-row{display:grid;grid-template-columns:1.2fr 1fr;gap:10px;margin:22px 0 12px;}
+  .kpi-slab .label{font-size:13px;letter-spacing:.08em;}
+  .kpi-slab .value{font-size:56px;}
+  .kpi-slab .sub{font-size:14px;white-space:normal;}
+  @media(max-width:700px){
+    .kpi-row{grid-template-columns:1fr;margin:16px 0 10px;}
+    .kpi-slab .value{font-size:44px;}
+  }
 </style>
 </head>
 
@@ -562,6 +570,18 @@
 </div>
 <div class="wrap">
 
+  <div class="kpi-row">
+    <div class="slab kpi-slab">
+      <div class="label">Total Views</div>
+      <div class="value up">1,499,830</div>
+      <div class="sub">↑ 25.2% vs. August — Collectors, Sports, and Card Shop/Breaks</div>
+    </div>
+    <div class="slab kpi-slab">
+      <div class="label">Total Followers</div>
+      <div class="value up">159.6K</div>
+      <div class="sub">39K socials + 120.6K Whatnot · topbidcollectors only</div>
+    </div>
+  </div>
   <div class="stats">
     <div class="slab follower-slab">
       <div class="label">Total Followers</div>
