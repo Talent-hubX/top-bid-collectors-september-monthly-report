@@ -615,6 +615,17 @@
     .header-board .best-slab{display:none;}
     .header-board .ring-slab{grid-column:1 / -1;width:100%;}
   }
+
+  @media(max-width:900px){
+    .header-board .ring-slab,
+    .stats .ring-slab{
+      grid-column:1 / -1 !important;
+      width:100% !important;
+      max-width:none !important;
+      min-width:0 !important;
+      flex:1 1 100% !important;
+    }
+  }
 </style>
 </head>
 
