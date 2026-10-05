@@ -512,6 +512,37 @@
   }
 
 
+
+  @media(max-width:900px){
+    .hero{padding:40px 18px 32px;}
+    .wrap{padding:0 14px 72px;}
+    .stats{
+      flex-wrap:wrap;
+      gap:10px;
+      margin:18px 0 36px;
+    }
+    .stats .slab:not(.ring-slab){flex:1 1 calc(50% - 10px);min-width:0;}
+    .stats .ring-slab{flex:1 1 100%;min-width:0;width:auto;max-width:none;}
+    .mom-table,.rank-list{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    .mom-row{min-width:520px;}
+    .rank-row{min-width:0;grid-template-columns:22px minmax(90px,1fr) 1fr 72px;gap:8px;}
+  }
+  @media(max-width:640px){
+    h1.title{font-size:40px;}
+    .subtitle{font-size:14px;line-height:1.35;}
+    .stats{flex-direction:column;}
+    .stats .slab:not(.ring-slab),.stats .ring-slab{flex:1 1 auto;width:100%;}
+    .stats .follower-slab .value,.stats .best-slab .value{font-size:52px;}
+    .stats .follower-slab .label,.stats .best-slab .label{font-size:15px;}
+    .stats .follower-slab .sub,.stats .best-slab .sub{font-size:15px;white-space:normal;}
+    .stats .slab:not(.ring-slab) .sub{white-space:normal;}
+    .ring-slab{display:flex;align-items:center;gap:12px;}
+    .format-grid{grid-template-columns:1fr;}
+    .insight,.grade-card,.mom-callouts{grid-template-columns:1fr;}
+    .closing-card,.strategy-card{flex-direction:column;gap:10px;}
+    .section-desc,.format-body p{font-size:14px;line-height:1.45;}
+  }
+
 </style>
 </head>
 
