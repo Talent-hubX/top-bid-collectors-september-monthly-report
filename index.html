@@ -92,7 +92,7 @@
   /* ---------- STAT SLABS ---------- */
   .stats{
     display:flex;flex-wrap:nowrap;align-items:stretch;gap:10px;
-    margin:-30px 0 56px;
+    margin:0 0 56px;
   }
   .stats .ring-slab{flex:0 0 320px;min-width:320px;width:320px;max-width:320px;}
   .stats .slab:not(.ring-slab){flex:1 1 0;min-width:0;padding:18px 12px;}
@@ -519,7 +519,7 @@
     .stats{
       flex-wrap:wrap;
       gap:10px;
-      margin:18px 0 36px;
+      margin:0 0 36px;
     }
     .stats .slab:not(.ring-slab){flex:1 1 calc(50% - 10px);min-width:0;}
     .stats .ring-slab{flex:1 1 100%;min-width:0;width:auto;max-width:none;}
@@ -549,9 +549,10 @@
   @media(max-width:900px){
     .swipe-hint{display:block;text-align:right;margin:-12px 2px 18px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:var(--gold-hi);}
   }
-  .kpi-row{display:grid;grid-template-columns:1.2fr 1fr;gap:10px;margin:22px 0 12px;}
+  .kpi-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0 16px;}
   .kpi-slab .label{font-size:13px;letter-spacing:.08em;}
-  .kpi-slab .value{font-size:56px;}
+  .kpi-slab{min-width:0;overflow:hidden;padding:20px 18px;}
+  .kpi-slab .value{font-size:48px;line-height:1;white-space:nowrap;}
   .kpi-slab .sub{font-size:14px;white-space:normal;}
   @media(max-width:700px){
     .kpi-row{grid-template-columns:1fr;margin:16px 0 10px;}
